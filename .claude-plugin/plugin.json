@@ -1,0 +1,10 @@
+{
+  "name": "terminal-legibility",
+  "version": "0.1.0",
+  "description": "Make terminal/TUI coding-agent output scannable — legible themes, fonts, diffs, rendering, and a self-formatting output style that leads with the next action.",
+  "author": { "name": "Roshan Abraham", "url": "https://github.com/rosh100yx" },
+  "homepage": "https://github.com/rosh100yx/terminal-legibility",
+  "repository": "https://github.com/rosh100yx/terminal-legibility",
+  "license": "MIT",
+  "keywords": ["terminal", "legibility", "accessibility", "readability", "git-diff", "tui", "cli", "agent-skill"]
+}

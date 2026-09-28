@@ -1,0 +1,12 @@
+{
+  "name": "terminal-legibility",
+  "description": "Skills for readable terminal/TUI coding-agent sessions",
+  "owner": { "name": "Roshan Abraham", "url": "https://github.com/rosh100yx" },
+  "plugins": [
+    {
+      "name": "terminal-legibility",
+      "source": "./",
+      "description": "Make terminal/TUI coding-agent output scannable — legible themes, fonts, diffs, rendering, and a self-formatting output style."
+    }
+  ]
+}

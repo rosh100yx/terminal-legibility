@@ -38,6 +38,10 @@ Pick one:
 # Command Code / any Agent-Skills tool: install from GitHub
 cmd skills add rosh100yx/terminal-legibility
 
+# Claude Code: add this repo as a plugin marketplace, then install
+claude plugin marketplace add rosh100yx/terminal-legibility
+claude plugin install terminal-legibility@terminal-legibility
+
 # or copy the directory into your skills dir
 cp -R terminal-legibility ~/.commandcode/skills/
 
