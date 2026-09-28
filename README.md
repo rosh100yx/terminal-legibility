@@ -1,7 +1,7 @@
 # terminal-legibility
 
-**Make your terminal stop fighting you.** An [Agent Skill](https://agentskills.io/specification)
-that turns a coding-agent TUI from a wall of text into something you can *squint at and read*.
+**Make your terminal stop fighting you.** An [Agent Skill](CREDITS.md#format) that turns a
+coding-agent TUI from a wall of text into something you can *squint at and read*.
 
 ```text
 BEFORE                                AFTER
@@ -21,9 +21,9 @@ BEFORE                                AFTER
 
 It attacks the two problems that make a TUI hard to read:
 
-1. **The view** — theme, font, git diffs, and agent verbosity that fight the reader.
-2. **The throw-back** — agent responses with no clear next step and no way to see what just
-   happened.
+1. **The view** — theme, font, git diffs, rendering, and agent verbosity that fight the reader.
+2. **The throw-back** — agent responses and raw markdown with no clear next step and no way to
+   see what just happened.
 
 ## Install
 
@@ -62,10 +62,12 @@ It runs five phases:
 | Theme | Catppuccin Mocha (~12:1 contrast) | Gruvbox Dark (warm, low glare) |
 | Font | JetBrains Mono (tallest x-height) | Commit Mono (smart kerning) |
 | Diff | `delta` as `core.pager` | `difftastic` as a `difft` alias |
+| Render | `glow -` for docs / agent output | `gum format -t code` |
 | Output | `outputStyle: Concise` (Claude Code) | `viewMode: focus` |
 
 Full, copy-pasteable config lives in [`references/`](references/) — exact ANSI hexes, font flags
-per terminal, delta/difftastic/bat gitconfig, and Claude Code / Codex / aider settings.
+per terminal, delta/difftastic/bat gitconfig, glow/gum rendering, and Claude Code / Codex /
+aider settings. Attributions for all of the above are in [CREDITS.md](CREDITS.md).
 
 ## The output rules (what the skill makes every agent do)
 
@@ -91,7 +93,9 @@ terminal-legibility/
 │   ├── themes.md       # Catppuccin Mocha, Gruvbox Dark, Tokyo Night + contrast rules
 │   ├── fonts.md        # fonts, size, line-height, ligatures
 │   ├── diff-tooling.md # delta, difftastic, bat config
+│   ├── rendering.md    # glow, gum, Lip Gloss/Glamour style
 │   └── agent-settings.md # Claude Code / Codex / aider verbosity + theming
+├── CREDITS.md          # attributions & source links
 └── LICENSE             # MIT
 ```
 

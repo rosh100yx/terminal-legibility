@@ -48,7 +48,7 @@ done
 
 echo
 echo "== Tools installed =="
-for t in delta bat difftastic eza fzf gh git; do
+for t in delta bat difftastic glow gum eza fzf gh git; do
   printf "%-12s: %s\n" "$t" "$(have "$t")"
 done
 
