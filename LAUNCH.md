@@ -64,6 +64,6 @@ or `cmd skills add`.
 
 - [ ] `git init` in the skill dir and commit (`SKILL.md`, `references/`, `scripts/`, `README.md`, `LICENSE`, `package.json`, `LAUNCH.md`)
 - [ ] create the GitHub repo + push
-- [ ] `npm publish --access public` (scope `@superbuild`)
+- [ ] `npm publish` (unscoped `terminal-legibility`)
 - [ ] list on https://agentskills.io if a submission path exists
 - [ ] post the HN + X + dev.to copy, linking the repo

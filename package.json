@@ -1,5 +1,5 @@
 {
-  "name": "@superbuild/terminal-legibility",
+  "name": "terminal-legibility",
   "version": "0.1.0",
   "description": "Agent Skill that makes terminal/TUI coding-agent sessions scannable. Audits and sets up a legible theme + font, readable git diffs (delta/difftastic/bat), glamorous markdown rendering (glow/gum), and agent verbosity — then applies a self-formatting output style that leads with the next action and ends with Next Actions + Reflective Questions.",
   "license": "MIT",
@@ -38,9 +38,6 @@
   "scripts": {
     "verify": "bash scripts/verify.sh",
     "prepublishOnly": "npm run verify"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "repository": {
     "type": "git",

@@ -6,8 +6,8 @@
   <br/>
 
   <p>
-    <a href="https://www.npmjs.com/package/@superbuild/terminal-legibility"><img src="https://img.shields.io/npm/v/@superbuild/terminal-legibility?style=for-the-badge&color=cb3837&logo=npm" alt="npm" /></a>
-    <a href="https://www.npmjs.com/package/@superbuild/terminal-legibility"><img src="https://img.shields.io/npm/dm/@superbuild/terminal-legibility?style=for-the-badge&color=cb3837&logo=npm" alt="npm downloads" /></a>
+    <a href="https://www.npmjs.com/package/terminal-legibility"><img src="https://img.shields.io/npm/v/terminal-legibility?style=for-the-badge&color=cb3837&logo=npm" alt="npm" /></a>
+    <a href="https://www.npmjs.com/package/terminal-legibility"><img src="https://img.shields.io/npm/dm/terminal-legibility?style=for-the-badge&color=cb3837&logo=npm" alt="npm downloads" /></a>
     <a href="https://github.com/rosh100yx/terminal-legibility"><img src="https://img.shields.io/github/stars/rosh100yx/terminal-legibility?style=for-the-badge&color=ffdd57&logo=github" alt="GitHub stars" /></a>
     <a href="https://github.com/rosh100yx/terminal-legibility/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" /></a>
   </p>
@@ -42,7 +42,7 @@ cmd skills add rosh100yx/terminal-legibility
 cp -R terminal-legibility ~/.commandcode/skills/
 
 # or install as a versioned package
-npm install @superbuild/terminal-legibility
+npm install terminal-legibility
 ```
 
 ## Use
