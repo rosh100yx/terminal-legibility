@@ -1,0 +1,40 @@
+{
+  "name": "@superbuild/terminal-legibility",
+  "version": "1.0.0",
+  "description": "Agent Skill that makes terminal/TUI coding-agent sessions scannable — legible themes, fonts, readable git diffs (delta/difftastic/bat), and a self-formatting output style that leads with the next action.",
+  "license": "MIT",
+  "keywords": [
+    "agent-skill",
+    "terminal",
+    "legibility",
+    "accessibility",
+    "readability",
+    "git-diff",
+    "delta",
+    "difftastic",
+    "bat",
+    "claude-code",
+    "codex",
+    "aider",
+    "tui",
+    "cli",
+    "catppuccin",
+    "gruvbox"
+  ],
+  "files": [
+    "SKILL.md",
+    "references/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosh100yx/terminal-legibility.git"
+  },
+  "homepage": "https://github.com/rosh100yx/terminal-legibility#readme",
+  "author": "Superbuild.agency",
+  "engines": {
+    "node": ">=18"
+  }
+}
