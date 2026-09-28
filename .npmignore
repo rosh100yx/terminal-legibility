@@ -1,0 +1,7 @@
+# npm uses the "files" allowlist in package.json, so this is a safety net only.
+# Never ship repo metadata, CI, or local scratch in the tarball.
+.github/
+assets/
+LAUNCH.md
+*.tgz
+.DS_Store

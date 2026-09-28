@@ -1,25 +1,30 @@
-# terminal-legibility
+<div align="center">
+  <img src="https://raw.githubusercontent.com/rosh100yx/terminal-legibility/main/assets/cover.png" alt="terminal-legibility — make your terminal stop fighting you" width="100%" />
+  <h1>terminal-legibility</h1>
+  <p><b>Make your terminal stop fighting you.</b></p>
+  <p><i>An Agent Skill that turns a coding-agent TUI from a wall of text into something you can squint at and read — legible themes, fonts, diffs, rendering, and a self-formatting output style.</i></p>
+  <br/>
 
-**Make your terminal stop fighting you.** An [Agent Skill](CREDITS.md#format) that turns a
-coding-agent TUI from a wall of text into something you can *squint at and read*.
+  <p>
+    <a href="https://www.npmjs.com/package/@superbuild/terminal-legibility"><img src="https://img.shields.io/npm/v/@superbuild/terminal-legibility?style=for-the-badge&color=cb3837&logo=npm" alt="npm" /></a>
+    <a href="https://www.npmjs.com/package/@superbuild/terminal-legibility"><img src="https://img.shields.io/npm/dm/@superbuild/terminal-legibility?style=for-the-badge&color=cb3837&logo=npm" alt="npm downloads" /></a>
+    <a href="https://github.com/rosh100yx/terminal-legibility"><img src="https://img.shields.io/github/stars/rosh100yx/terminal-legibility?style=for-the-badge&color=ffdd57&logo=github" alt="GitHub stars" /></a>
+    <a href="https://github.com/rosh100yx/terminal-legibility/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" /></a>
+  </p>
 
-```text
-BEFORE                                AFTER
-─────────────────────────────          ─────────────────────────────
-[agent] Sure! Let me explore...        [agent] Run: git log -p | delta
-        <spinner> <spinner>                   Side-by-side diff, word-
-        "I'll take a look at that."            level highlight, no @@ noise
-        <200-line unstructured                 Theme: Catppuccin Mocha
-         wall of text>                          Font: JetBrains Mono 15pt
-        "Let me know if you need               ─────────────────────────
-         anything else!"                        ## Next Actions
-                                                 - [ ] apply delta config
-                                                ## Reflective Questions
-                                                 - Do you want side-by-side
-                                                   or unified?
-```
+  <p>
+    <b>Get started:</b><br/>
+    <code>cmd skills add rosh100yx/terminal-legibility</code><br/>
+    <sub>No dependencies. Works with any tool that follows the Agent Skills format (format + attributions in <a href="CREDITS.md">CREDITS.md</a>).</sub>
+  </p>
+  <br/>
+</div>
 
-It attacks the two problems that make a TUI hard to read:
+<div align="center">
+  <img src="https://raw.githubusercontent.com/rosh100yx/terminal-legibility/main/assets/before-after.png" alt="before and after — raw markdown vs styled output" width="90%" />
+</div>
+
+## The two problems it fixes
 
 1. **The view** — theme, font, git diffs, rendering, and agent verbosity that fight the reader.
 2. **The throw-back** — agent responses and raw markdown with no clear next step and no way to
@@ -34,10 +39,10 @@ Pick one:
 cmd skills add rosh100yx/terminal-legibility
 
 # or copy the directory into your skills dir
-cp -R .agents/skills/terminal-legibility ~/.commandcode/skills/
+cp -R terminal-legibility ~/.commandcode/skills/
 
-# or via npm
-npx @superbuild/terminal-legibility
+# or install as a versioned package
+npm install @superbuild/terminal-legibility
 ```
 
 ## Use
@@ -50,7 +55,7 @@ Just talk to it:
 It runs five phases:
 
 1. **Detect** — `scripts/detect.sh` identifies your terminal, shell, diff tools, and agent configs.
-2. **Audit** — flags the contrast / font / diff / verbosity weak spots.
+2. **Audit** — flags the contrast / font / diff / render / verbosity weak spots.
 3. **Emit** — a legibility profile: one recommended default + one alternative per layer.
 4. **Apply** — copy-paste snippets, or write to config files that already exist (diff-only, never clobbers).
 5. **Self-format** — applies a 10-rule output style so *its own* responses lead with the next action and end with Next Actions + Reflective Questions.
@@ -88,13 +93,16 @@ aider settings. Attributions for all of the above are in [CREDITS.md](CREDITS.md
 terminal-legibility/
 ├── SKILL.md            # the skill (frontmatter + phased body + ruleset)
 ├── scripts/
-│   └── detect.sh       # read-only terminal/shell/tool detection
+│   ├── detect.sh       # read-only terminal/shell/tool detection
+│   └── verify.sh       # validates SKILL.md before publish
 ├── references/
 │   ├── themes.md       # Catppuccin Mocha, Gruvbox Dark, Tokyo Night + contrast rules
 │   ├── fonts.md        # fonts, size, line-height, ligatures
 │   ├── diff-tooling.md # delta, difftastic, bat config
 │   ├── rendering.md    # glow, gum, Lip Gloss/Glamour style
 │   └── agent-settings.md # Claude Code / Codex / aider verbosity + theming
+├── assets/             # cover + before/after images
+├── .github/workflows/  # CI + npm release on tag
 ├── CREDITS.md          # attributions & source links
 └── LICENSE             # MIT
 ```
